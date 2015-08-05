@@ -1,0 +1,214 @@
+.icon {
+    position: relative;
+    font-style: normal;
+    display: block;
+    line-height: 1;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    &--quote {
+        font-family: 'bbcicons--core';
+        &:before {
+            content: '"';
+        }
+    }
+
+    &--tick {
+        font-family: 'bbcicons--core';
+        &:before {
+            content: '\E00D';
+        }
+    }
+
+    &--playlister {
+        font-family: 'bbcicons--core';
+        font-size: 24px;
+        color: #fff;
+        background: map-get($brand-colors, playlister);
+        &:before {
+            content: '\E031';
+        }
+    }
+
+    &--duration {
+        font-family: 'bbcicons--core';
+        &:before {
+            content: '\E014';
+        }
+    }
+
+    &--add {
+        font-family: 'bbcicons--core';
+        &:before {
+            content: '\e00f';
+        }
+    }
+
+    &--arrow-up {
+        font-family: 'bbcicons--core';
+        &:before {
+            content: '\e003';
+        }
+    }
+
+    &--close {
+        font-family: 'bbcicons--core';
+        &:before {
+            content: '\E00E';
+        }
+    }
+
+    &--iplayer {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e000';
+        }
+    }
+
+    &--audio {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e111';
+        }
+    }
+
+    &--prev {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e114';
+        }
+    }
+
+    &--next {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e115';
+        }
+    }
+
+
+    &--story {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e118';
+        }
+    }
+
+    &--play {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e112';
+        }
+    }
+
+    &--pause {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e113';
+        }
+    }
+
+    &--gallery {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e117';
+        }
+    }
+
+    &--fs {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e11f';
+        }
+    }
+
+    &--volume {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e111';
+        }
+    }
+
+    &--muted {
+        font-family: 'bbcicons--media';
+        &:before {
+            content: '\e122';
+        }
+    }
+
+    &--love {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e205';
+        }
+    }
+
+    &--share {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e200';
+        }
+    }
+
+    &--digg {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e30A';
+        }
+    }
+
+    &--google {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e303';
+        }
+    }
+
+    &--reddit {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e309';
+        }
+    }
+
+    &--twitter {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e300';
+        }
+    }
+
+    &--facebook {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e301';
+        }
+    }
+
+    &--linkedin {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e308';
+        }
+    }
+
+    &--stumbleupon {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e307';
+        }
+    }
+
+    &--email {
+        font-family: 'bbcicons--social';
+        &:before {
+            content: '\e200';
+        }
+    }
+
+
+}
