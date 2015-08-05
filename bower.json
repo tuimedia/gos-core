@@ -1,0 +1,28 @@
+{
+  "name": "gos-core",
+  "dependencies": {
+    "gos-variables": ">0.0.1",
+    "gos-mixins": ">0.0.1"
+  },
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "mocha": "~2.2.5"
+  },
+  "version": "0.0.4",
+  "homepage": "https://github.com/tuimedia/gos-core",
+  "description": "gos-core scss",
+  "main": "styles/main.scss",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
