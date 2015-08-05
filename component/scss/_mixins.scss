@@ -1,0 +1,49 @@
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@mixin rem($property, $values...) {
+
+    $max: length($values);
+    $pxValues: '';
+    $remValues: '';
+    $baseUnit: strip-unit($base-font-size);
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $pxValues: #{$pxValues + $value}px;
+
+        @if $i < $max {
+            $pxValues: #{$pxValues + " "};
+        }
+    }
+
+    @for $i from 1 through $max {
+        $value: strip-unit(nth($values, $i));
+        $remValues: #{$remValues + $value / $baseUnit}rem;
+
+        @if $i < $max {
+            $remValues: #{$remValues + " "};
+        }
+    }
+
+    #{$property}: $pxValues;
+    #{$property}: $remValues;
+}
+
+
+@mixin mq($break-min, $break-max: false) {
+    @if $break-max == false {
+        @media (min-width: $break-min) {
+            @content;
+        }
+    } @else if $break-min == false {
+        @media (max-width: $break-max - 1px) {
+            @content;
+        }
+    } @else {
+        @media (min-width: $break-min) and (max-width: $break-max - 1px) {
+            @content;
+        }
+    }
+}

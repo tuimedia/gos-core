@@ -1,0 +1,45 @@
+html { font-size: 62.5%; }
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-size: 1.4rem;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+@font-face {
+    font-family: 'bbcicons--media';
+    src: url(base/gelicons-media.ttf);
+}
+@font-face {
+    font-family: 'bbcicons--social';
+    src: url(base/gelicons-social.ttf);
+}
+
+@font-face {
+    font-family: 'bbcicons--core';
+    src: url(base/gelicons-core.ttf);
+}

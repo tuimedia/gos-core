@@ -1,0 +1,18 @@
+.w {
+    @each $bpKey, $bpWidth in $break {
+        @each $columnKey, $columnWidth in $columns {
+            @if $bpKey != 'xs' {
+                @include mq($bpWidth) {
+                    &--#{$bpKey}-#{$columnKey} {
+                        width: $columnWidth;
+                    }
+                }
+            } @else {
+                &--#{$bpKey}-#{$columnKey} {
+                    width: $columnWidth;
+                }
+            }
+
+        }
+    }
+}

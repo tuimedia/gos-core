@@ -1,9 +1,6 @@
 {
   "name": "gos-core",
-  "dependencies": {
-    "gos-variables": ">0.0.1",
-    "gos-mixins": ">0.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "version": "0.0.4",
   "homepage": "https://github.com/tuimedia/gos-core",
