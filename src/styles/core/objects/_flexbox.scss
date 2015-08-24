@@ -36,34 +36,16 @@
  */
 
  // EDIT: ont care abot flexbox support. Swapping out hacky table layout for real flexbox layout
-.flexbox{
-    display:table;
-    width:100%;
-}
 
-/**
- * Nasty hack to circumvent Modernizr conflicts.
- */
-html.flexbox{
-    display:block;
-    width:auto;
-}
-
-    .flexbox__item{
-        display:table-cell;
-        vertical-align:middle;
-    }
-
-}//endif
 
 .flexbox {
     @extend %margin-bottom;
     display: flex;
     flex-wrap: wrap;
-    @include rem(margin-left, -$base-grid-gutter);
+    margin-left: -$base-spacing-unit;
 
     &__item {
-        @include rem(padding-left, $base-grid-gutter);
+      padding-left: -$base-spacing-unit;
     }
 }
 
@@ -101,10 +83,10 @@ html.flexbox{
 
 // Smaller grid gutter
 .flexbox--slim {
-    @include rem(margin-left, -$base-grid-gutter/3);
+      margin-left: -$base-spacing-unit/3;
 
     > .flexbox__item {
-        @include rem(margin-bottom, $base-grid-gutter/3);
-        @include rem(padding-left, $base-grid-gutter/3);
+        margin-bottom: $base-spacing-unit/3;
+        padding-left: $base-spacing-unit/3;
     }
-}
+}//endif
