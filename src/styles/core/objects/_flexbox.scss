@@ -43,7 +43,7 @@
     margin-bottom: $base-spacing-unit;
 
     &__item {
-      padding-left: -$base-spacing-unit;
+      margin-left: -$base-spacing-unit;
     }
 }
 
@@ -71,7 +71,7 @@
 
     > .flexbox__item {
         margin-bottom: 0;
-        padding-left: 0;
+        margin-left: 0;
     }
 }
 
@@ -80,7 +80,7 @@
 
     > .flexbox__item {
         margin-bottom: $base-spacing-unit/3;
-        padding-left: $base-spacing-unit/3;
+        margin-left: $base-spacing-unit/3;
     }
 }
 
