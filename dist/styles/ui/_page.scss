@@ -1,0 +1,39 @@
+html, body, .gel-content-wrap {
+    height: 100%;
+}
+
+.page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.gel-content-wrap {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.wrap {
+    @extend %gel-wrapper;
+    position: relative;
+    height: 100%;
+}
+
+.gel-masthead {
+    background: #444444;
+    padding: $base-spacing-unit*2 0;
+    h1 {
+        margin: 0;
+        color: #fff;
+    }
+}
+
+%gel-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 $half-spacing-unit;
+    @include media-query(map-get($break, s)) {
+        padding: 0 $base-spacing-unit;
+    }
+}

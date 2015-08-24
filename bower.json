@@ -6,8 +6,7 @@
   "homepage": "https://github.com/tuimedia/gos-core",
   "description": "gos-core scss",
   "main": [
-    "dist/styles/style.scss",
-    "dist/js/Utils.js"
+    "dist/styles/style.scss"
   ],
   "moduleType": [
     "amd",
