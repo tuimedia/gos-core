@@ -35,8 +35,6 @@
  *
  */
 
- // EDIT: ont care abot flexbox support. Swapping out hacky table layout for real flexbox layout
-
 
 .flexbox {
     @extend %margin-bottom;
@@ -49,7 +47,6 @@
     }
 }
 
-// Items on every row will always stretch to 100%
 .flexbox--stretch {
     align-content: stretch;
     align-items: stretch;
@@ -59,19 +56,16 @@
     }
 }
 
-// Matches cell height to the sibling grid items on that row
 .flexbox--flex-cell {
     > .flexbox__item {
         display: flex;
     }
 }
 
-// Make sure grid doesn't wrap
 .flexbox--nowrap {
     flex-wrap: nowrap;
 }
 
-// Removes any gutter from the grid
 .flexbox--flush {
     margin-left: 0;
 
@@ -81,7 +75,6 @@
     }
 }
 
-// Smaller grid gutter
 .flexbox--slim {
       margin-left: -$base-spacing-unit/3;
 
