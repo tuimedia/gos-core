@@ -37,10 +37,10 @@
 
 
 .flexbox {
-    @extend %margin-bottom;
     display: flex;
     flex-wrap: wrap;
     margin-left: -$base-spacing-unit;
+    margin-bottom: $base-spacing-unit;
 
     &__item {
       padding-left: -$base-spacing-unit;
@@ -82,4 +82,6 @@
         margin-bottom: $base-spacing-unit/3;
         padding-left: $base-spacing-unit/3;
     }
+}
+
 }//endif
