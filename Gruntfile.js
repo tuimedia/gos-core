@@ -330,7 +330,6 @@ module.exports = function(grunt) {
             'templates/{,*/}*.html',
             'styles/**/*.scss',
             'scripts/{,*/}*.js',
-            '!styles/main.scss',
             '!scripts/main.js'
           ]
         }]
