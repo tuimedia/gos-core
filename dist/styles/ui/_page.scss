@@ -20,15 +20,6 @@ html, body, .gel-content-wrap {
     height: 100%;
 }
 
-.gel-masthead {
-    background: #444444;
-    padding: $base-spacing-unit*2 0;
-    h1 {
-        margin: 0;
-        color: #fff;
-    }
-}
-
 %gel-wrapper {
     max-width: 1400px;
     margin: 0 auto;

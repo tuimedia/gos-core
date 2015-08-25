@@ -133,11 +133,6 @@ $brand-colors: (
 );
 
 
-
 $base-spacing-unit: 16px;
-$half-spacing-unit: $base-spacing-unit/2;
 
-// breakpoints
-$break-small:      640px;
-$break-medium:     860px;
-$break-large:      1200px;
+$half-spacing-unit: $base-spacing-unit/2;
