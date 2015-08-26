@@ -1,3 +1,4 @@
+'use strict';
 
 module.exports = {
   breakpoints: {
@@ -36,7 +37,7 @@ module.exports = {
 
       var context = scope || this;
 
-      var now = +new Date,
+      var now = +new Date(),
           args = arguments;
 
       if (last && now < last + threshhold) {
@@ -50,7 +51,7 @@ module.exports = {
         last = now;
         fn.apply(context, args);
       }
-    }
+    };
   },
   screenSize: function() {
     if (window.innerWidth > this.breakpoints.huge) {
@@ -63,4 +64,4 @@ module.exports = {
         return 'small';
     }
   }
-}
+};
