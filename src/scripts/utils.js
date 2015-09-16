@@ -2,10 +2,9 @@
 
 module.exports = {
   breakpoints: {
-      small: 240,
-      medium: 400,
-      large: 600,
-      huge: 900
+      'lap': 450,
+      'desk': 768,
+      'desk-wide': 1008
   },
   getAllElementsWithAttribute: function(attribute) {
     var matchingElements = [];
@@ -54,14 +53,14 @@ module.exports = {
     };
   },
   screenSize: function() {
-    if (window.innerWidth > this.breakpoints.huge) {
-        return 'huge';
-    } else if (window.innerWidth <= this.breakpoints.huge && window.innerWidth > this.breakpoints.large) {
-        return 'large';
-    } else if (window.innerWidth <= this.breakpoints.large && window.innerWidth > this.breakpoints.medium) {
-        return 'medium';
+    if (window.innerWidth >= this.breakpoints['desk-wide']) {
+        return 'desk-wide';
+    } else if (window.innerWidth < this.breakpoints['desk-wide'] && window.innerWidth >= this.breakpoints['desk']) {
+        return 'desk';
+    } else if (window.innerWidth < this.breakpoints['desk'] && window.innerWidth >= this.breakpoints['lap']) {
+        return 'lap';
     } else {
-        return 'small';
+        return 'palm';
     }
   }
 };
