@@ -1,30 +1,55 @@
-html, body, .gel-content-wrap {
+
+// ---------------------------------------------------- //
+
+html,
+body {
     height: 100%;
 }
 
-.page {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 16px;
-}
 
+
+// global GEL wrapper
+// no width restrictions
+// ---------------------------------------------------- //
+
+%gel-content-wrap,
 .gel-content-wrap {
-    background: #fff;
+    height: 100%;
+    background: $gel-page-bg;
     position: relative;
     z-index: 1;
 }
 
-.wrap {
+
+
+// global content wrapper
+// ---------------------------------------------------- //
+
+%gel-wrap,
+.gel-wrap {
     @extend %gel-wrapper;
     position: relative;
     height: 100%;
-}
-
-%gel-wrapper {
-    max-width: 1400px;
+    max-width: $gel-max-page-width;
     margin: 0 auto;
     padding: 0 $half-spacing-unit;
-    @include media-query(map-get($break, s)) {
+    @include media-query(lap-and-up) {
         padding: 0 $base-spacing-unit;
     }
+    &--no-padding {
+        padding: 0;
+    }
+
+}
+
+
+
+// default link style
+// ---------------------------------------------------- //
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }

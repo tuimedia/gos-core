@@ -44,6 +44,12 @@
         }
     }
 
+    &--arrow-down {
+        font-family: 'bbcicons--core';
+        &:before {
+            content: '\E004';
+        }
+    }
 
     &-time-remaining {
         font-family: 'bbcicons--core';
