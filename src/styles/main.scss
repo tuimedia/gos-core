@@ -1,32 +1,18 @@
-@charset "UTF-8";
-/*------------------------------------*\
-    STYLE.CSS
-\*------------------------------------*/
-/**
- *
- * sass --watch style.scss:style.min.css --style compressed
- *
- * Here we pull in some variables, include the inuit.css framework, then add our
- * project-specific components afterwards.
- */
+@charset 'utf-8';
 
 
-/**
- * Setup
- */
-@import "vars";
-@import "core/inuit";
+// Settings
+@import 'settings.units';
+@import 'settings.colours';
+@import 'settings.icons';
 
 
+// Tools
+@import 'tools.media-query';
 
 
-
-/**
- * She’s all yours, cap’n... Begin importing your stuff here.
- */
-@import "ui/icons";
-@import "ui/page";
-@import "ui/fonts";
+// Base
+@import 'base.page';
 
 
-
+// Objects

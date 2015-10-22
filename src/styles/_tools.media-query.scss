@@ -1,0 +1,19 @@
+@mixin media-query($break-min, $break-max: false) {
+  @if $break-max == false {
+    @media (min-width: $break-min) {
+      @content;
+    }
+  }
+
+  @else if $break-min == false {
+    @media (max-width: $break-max - 1px) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: $break-min) and (max-width: $break-max - 1px) {
+      @content;
+    }
+  }
+}

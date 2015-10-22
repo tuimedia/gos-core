@@ -1,0 +1,50 @@
+$font-sizes: (
+  tera: 72px,
+  giga: 60px,
+  mega: 48px,
+  alpha: 36px,
+  beta: 27px,
+  gamma: 24px,
+  delta: 20px,
+  epsilon: 18px,
+  zeta: 16px
+) !default;
+
+
+$columns: (
+  'one-whole': 100%,
+  'seven-eighths': 87.5%,
+  'four-fifths': 80%,
+  'three-quarters': 75%,
+  'two-thirds': 66.6666%,
+  'five-eighths': 62.5%,
+  'three-fifths': 60%,
+  'one-half': 50%,
+  'two-fifths': 40%,
+  'three-eighths': 37.5%,
+  'one-third': 33.3333%,
+  'one-quarter': 25%,
+  'one-fifth': 20%,
+  'one-eighth': 12.5%
+) !default;
+
+
+$break: (
+  xs: 400px,
+   s: 600px,
+   m: 800px,
+   l: 1000px,
+  xl: 1200px
+) !default;
+
+
+$base-ratio: 1.5 !default;
+$base-font-size: 16px !default;
+$base-line-height: $base-font-size * $base-ratio !default;
+$base-ratio: $base-line-height / $base-font-size !default;
+$base-spacing-unit: $base-line-height !default;
+$base-grid-gutter: $base-font-size !default;
+
+
+$gel-max-page-width: 1200px !default;
+$gel-page-bg: #fff !default;
