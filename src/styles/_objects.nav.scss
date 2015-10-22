@@ -1,0 +1,22 @@
+.nav {
+  @extend %cf;
+
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    &, > a {
+      display: inline-block;
+    }
+  }
+
+  &--stacked {
+    li {
+      display: list-item;
+
+      > a {
+        display: block;
+      }
+    }
+  }
+}
