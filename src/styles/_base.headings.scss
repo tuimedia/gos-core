@@ -1,0 +1,43 @@
+%hN {
+  margin-bottom: $base-spacing-unit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %hN;
+}
+
+h1 {
+  font-size: map-get($font-sizes, alpha);
+}
+
+h2 {
+  font-size: map-get($font-sizes, beta);
+}
+
+h3 {
+  font-size: map-get($font-sizes, gamma);
+}
+
+h4 {
+  font-size: map-get($font-sizes, delta);
+}
+
+h5 {
+  font-size: map-get($font-sizes, epsilon);
+}
+
+h6 {
+  font-size: map-get($font-sizes, zeta);
+}
+
+@each $name,
+$size in $font-sizes {
+  .#{$name} {
+    font-size: $size;
+  }
+}

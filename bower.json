@@ -1,6 +1,10 @@
 {
   "name": "gos-core",
-  "dependencies": {},
+  "dependencies": {
+    "inuit-normalize.css": "inuit-normalize#~3.0.3",
+    "inuit-reset": "~0.1.1",
+    "inuit-box-sizing": "~0.2.0"
+  },
   "devDependencies": {},
   "version": "0.0.4",
   "homepage": "https://github.com/tuimedia/gos-core",

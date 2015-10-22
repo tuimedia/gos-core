@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+  margin-bottom: $base-spacing-unit;
+
+  th,
+  td {
+    vertical-align: top;
+  }
+}
+
+thead {
+  tr {
+    border-bottom: 2px solid #eee;
+  }
+
+  th {
+    padding-bottom: 6px;
+  }
+}
+
+tbody {
+  border-bottom: 2px solid #eee;
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+
+  th {
+    padding-left: 0;
+    text-align: right;
+  }
+
+  th,
+  td {
+    padding: 12px;
+  }
+}

@@ -11,8 +11,21 @@
 @import 'tools.media-query';
 
 
+// Generic
+@import '../../bower_components/inuit-reset/generic.reset';
+@import '../../bower_components/inuit-normalize.css/generic.normalize';
+@import '../../bower_components/inuit-box-sizing/generic.box-sizing';
+
+
 // Base
 @import 'base.page';
+@import 'base.headings';
+@import 'base.paragraphs';
+@import 'base.lists';
+@import 'base.images';
+@import 'base.tables';
 
 
 // Objects
+@import 'objects.grid';
+@import 'objects.wrapper';

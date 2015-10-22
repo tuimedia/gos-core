@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <title>gel component template</title>
   <meta name="description" content="">
@@ -17,54 +18,121 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-  </head>
-  <body>
+</head>
+
+<body>
 
   <div class="gel-content-wrap js-content-wrap">
 
     <section class="gel-content">
       <div class="gel-wrap">
-        <h1>GEL Core</h1>
+        <div class="gel-grid">
+          <div class="gel-grid__item">
+            <h1>GEL Core</h1>
+            <h2>Fonts</h2>
+          </div>
+        </div>
 
-        <h2>Fonts</h2>
+        <div class="gel-grid">
+          <div class="gel-grid__item" style="width:50%;">
+            <h3>fs-clerkenwell</h3>
+            <p class="fs-clerkenwell">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-clerkenwell-bold</h3>
+            <p class="fs-clerkenwell-bold">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-clerkenwell-italic</h3>
+            <p class="fs-clerkenwell-italic">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-clerkenwell-light</h3>
+            <p class="fs-clerkenwell-light">The quick brown fox jumps over the lazy dog</p>
+            <h2>Lists</h2>
+            <ul>
+              <li>Test unordered list</li>
+              <li>
+                Test unordered list
+                <ul>
+                  <li>Test nested list</li>
+                  <li>Test nested list</li>
+                  <li>Test nested list</li>
+                </ul>
+              </li>
+              <li>Test unordered list</li>
+            </ul>
+            <ol>
+              <li>Test ordered list</li>
+              <li>Test ordered list</li>
+              <li>Test ordered list</li>
+            </ol>
+            <dl>
+              <dt>Test definition title</dt>
+              <dd>Test definition description</dd>
+              <dt>Test definition title</dt>
+              <dd>Test definition description</dd>
+              <dt>Test definition title</dt>
+              <dd>Test definition description</dd>
+            </dl>
+          </div>
 
-        <h3>fs-clerkenwell</h3>
-        <p class="alpha fs-clerkenwell">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-clerkenwell-bold</h3>
-        <p class="alpha fs-clerkenwell-bold">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-clerkenwell-italic</h3>
-        <p class="alpha fs-clerkenwell-italic">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-clerkenwell-light</h3>
-        <p class="alpha fs-clerkenwell-light">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-bold</h3>
-        <p class="alpha fs-elliot-bold">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-bolditalic</h3>
-        <p class="alpha fs-elliot-bolditalic">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-heavy</h3>
-        <p class="alpha fs-elliot-heavy">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-heavyitalic</h3>
-        <p class="alpha fs-elliot-heavyitalic">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-italic</h3>
-        <p class="alpha fs-elliot-italic">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-light</h3>
-        <p class="alpha fs-elliot-light">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-lightitalic</h3>
-        <p class="alpha fs-elliot-lightitalic">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-regular</h3>
-        <p class="alpha fs-elliot-regular">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-thin</h3>
-        <p class="alpha fs-elliot-thin">The quick brown fox jumps over the lazy dog</p>
-        <h3>fs-elliot-thinitalic</h3>
-        <p class="alpha fs-elliot-thinitalic">The quick brown fox jumps over the lazy dog</p>
+          <div class="gel-grid__item" style="width:50%;">
+            <h3>fs-elliot-bold</h3>
+            <p class="fs-elliot-bold">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-bolditalic</h3>
+            <p class="fs-elliot-bolditalic">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-heavy</h3>
+            <p class="fs-elliot-heavy">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-heavyitalic</h3>
+            <p class="fs-elliot-heavyitalic">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-italic</h3>
+            <p class="fs-elliot-italic">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-light</h3>
+            <p class="fs-elliot-light">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-lightitalic</h3>
+            <p class="fs-elliot-lightitalic">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-regular</h3>
+            <p class="fs-elliot-regular">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-thin</h3>
+            <p class="fs-elliot-thin">The quick brown fox jumps over the lazy dog</p>
+            <h3>fs-elliot-thinitalic</h3>
+            <p class="fs-elliot-thinitalic">The quick brown fox jumps over the lazy dog</p>
+          </div>
+        </div>
 
+        <div class="gel-grid">
+          <div class="gel-grid__item">
+            <h2>Table</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Heading 1</th>
+                  <th>Heading 2</th>
+                  <th>Heading 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-repeat=7>
+                  <td>Table item</td>
+                  <td>Table item</td>
+                  <td>Table item</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
       </div>
     </section>
 
   </div>
 
   <script>
+    'use strict';
 
+    const repeaters = document.querySelectorAll('[data-repeat]');
 
+    let repeat = (el) => {
+        for (let i = 0; i < el.getAttribute('data-repeat'); i++)
+            el.parentNode.appendChild(el.cloneNode(true));
+    }
+
+    Array.from(repeaters).forEach(repeat);
   </script>
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
@@ -75,5 +143,6 @@
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
 
-  </body>
+</body>
+
 </html>
