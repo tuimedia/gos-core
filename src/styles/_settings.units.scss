@@ -43,6 +43,7 @@ $base-font-size: 16px !default;
 $base-line-height: $base-font-size * $base-ratio !default;
 $base-ratio: $base-line-height / $base-font-size !default;
 $base-spacing-unit: $base-font-size !default;
+$half-spacing-unit: $base-spacing-unit/2 !default;
 $base-grid-gutter: $base-font-size !default;
 
 
