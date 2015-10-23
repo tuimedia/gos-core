@@ -16,4 +16,18 @@
       padding-left: $base-spacing-unit;
     }
   }
+
+  &--flush {
+    margin-left: 0;
+
+    .gel-grid__item {
+      padding-left: 0;
+    }
+  }
+
+  &--stretch {
+    > .gel-grid__item {
+      display: flex;
+    }
+  }
 }
