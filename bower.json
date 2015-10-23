@@ -6,7 +6,7 @@
     "inuit-box-sizing": "~0.2.0"
   },
   "devDependencies": {},
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "https://github.com/tuimedia/gos-core",
   "description": "gos-core scss",
   "main": [
