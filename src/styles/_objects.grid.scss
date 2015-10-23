@@ -1,7 +1,11 @@
 .gel-grid {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  margin-left: -$base-spacing-unit/2;
+
+  @include media-query(map-get($break, s)) {
+    margin-left: -$base-spacing-unit;
+  }
 
   &__item {
     padding-left: $base-spacing-unit/2;
