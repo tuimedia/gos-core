@@ -10,7 +10,6 @@
   &__item {
     padding-left: $base-spacing-unit/2;
     width: 100%;
-    flex-grow: 1;
 
     @include media-query(map-get($break, s)) {
       padding-left: $base-spacing-unit;
@@ -28,6 +27,12 @@
   &--stretch {
     > .gel-grid__item {
       display: flex;
+    }
+  }
+
+  &--flex {
+    > .gel-grid__item {
+      flex-grow: 1;
     }
   }
 }
