@@ -1,0 +1,42 @@
+// $columns: (
+//   'one-whole': 100%,
+//   'seven-eighths': 87.5%,
+//   'four-fifths': 80%,
+//   'three-quarters': 75%,
+//   'two-thirds': 66.6666%,
+//   'five-eighths': 62.5%,
+//   'three-fifths': 60%,
+//   'one-half': 50%,
+//   'two-fifths': 40%,
+//   'three-eighths': 37.5%,
+//   'one-third': 33.3333%,
+//   'one-quarter': 25%,
+//   'one-fifth': 20%,
+//   'one-eighth': 12.5%
+// ) !default;
+//
+//
+// $break: (
+//   xs: 400px,
+//    s: 600px,
+//    m: 800px,
+//    l: 1000px,
+//   xl: 1200px
+// ) !default;
+
+
+@each $breakName, $breakWidth in $break {
+  @each $columnName, $columnWidth in $columns {
+    @if $breakName != 'xs' {
+      @include media-query($breakWidth) {
+        .w--#{$breakName}-#{$columnName} {
+          width: $columnWidth;
+        }
+      }
+    } @else {
+      .w--#{$breakName}-#{$columnName} {
+        width: $columnWidth;
+      }
+    }
+  }
+}
